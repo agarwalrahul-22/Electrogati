@@ -1,0 +1,40 @@
+CRITICAL - 2022-07-11 03:32:05 --> Class "App\Models\SalesModel" not found
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-11 03:32:54 --> Class "App\Models\SalesModel" not found
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-11 03:42:39 --> Invalid file: home_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home_view.php', [], true)
+ 3 APPPATH\Controllers\Home.php(40): view('home_view.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-11 03:45:23 --> Invalid file: base.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('base.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('base', [], true)
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home_view.php', [], true)
+ 4 APPPATH\Controllers\Home.php(40): view('home_view.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-11 15:34:40 --> Class "BaseController" not found
+in APPPATH\Controllers\Rentlisted.php on line 3.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Rentlisted')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Rentlisted')
+ 4 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('Rentlisted')
+ 5 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

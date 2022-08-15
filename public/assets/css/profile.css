@@ -1,0 +1,118 @@
+.card {
+    box-shadow: 0 0 5px 0;
+    background: inherit !important;
+}
+
+section {
+    padding-top: 100px !important;
+    padding-bottom: 50px;
+}
+
+#pro {
+    background: url('../img/bgweb-02.png');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding: 60px 0 40px 0;
+}
+
+#pro {
+    background-attachment: fixed;
+}
+
+#pro:before {
+    content: "";
+    background: rgba(13, 20, 41, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#pro h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#pro h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#pro p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 70%;
+    height: 100%;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -40%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: inherit;
+    color: black;
+}
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}

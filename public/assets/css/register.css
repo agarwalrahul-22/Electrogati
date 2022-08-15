@@ -1,0 +1,56 @@
+.card {
+    box-shadow: 0 0 5px 0;
+    background: inherit !important;
+    /* backdrop-filter: blur(10px); */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
+
+#register {
+    background: url('../img/bgweb-04.png');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding: 60px 0 40px 0;
+}
+
+@media (min-width: 1024px) {
+    #register {
+        background-attachment: fixed;
+    }
+}
+
+#register:before {
+    content: "";
+    background: rgba(13, 20, 41, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#register h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#register h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#register p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+}

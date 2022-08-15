@@ -1,0 +1,59 @@
+CRITICAL - 2022-07-14 12:12:46 --> Invalid file: contact.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contact.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('contact', [], true)
+ 3 APPPATH\Controllers\Contact.php(83): view('contact', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Contact->googleCaptachStore()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:34:48 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:35:20 --> Call to undefined method CodeIgniter\Session\Session::data()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:35:22 --> Call to undefined method CodeIgniter\Session\Session::data()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:37:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 17.
+ 1 APPPATH\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Login.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:37:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 17.
+ 1 APPPATH\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Login.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:37:29 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-14 23:40:26 --> Undefined variable $page
+in APPPATH\Views\base.php on line 31.
+ 1 APPPATH\Views\base.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'APPPATH\\Views\\base.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\base.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('base', [], true)
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('forgot_password_view', [], true)
+ 6 APPPATH\Controllers\Login.php(190): view('forgot_password_view', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->forgot_password()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

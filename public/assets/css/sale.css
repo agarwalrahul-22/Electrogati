@@ -1,0 +1,169 @@
+
+#hero {
+
+    background: url(http://localhost/mobility/public/assets/img/bgweb-03.png) top center;
+    background-size: cover;
+    width: 100% !important;
+    height: 100vh;
+    overflow: visible;
+    position: relative;
+    /* object-fit: fill; */
+    background-repeat: no-repeat;
+}
+
+#hero p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.sale-form {
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.input_element {
+    margin-top: 14px;
+    /* border: 1px solid blue; */
+    width: 45%;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+
+/* p {
+        text-align: left;
+        margin-top: 2px;
+    } */
+
+.wide {
+    width: 100%;
+}
+
+.form_wrapper {
+    width: 65%;
+    /* border: 2px solid black; */
+    padding: 5px;
+}
+
+
+.form_elements {
+    color: black;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.input_element input,
+.input_element select {
+    height: 30px;
+    border-radius: 5px;
+    /* border:1px solid black; */
+}
+
+.input_element p {
+    font-weight: 300;
+}
+
+.update_btn {
+    width: 40%;
+    margin-left: 60%;
+    height: 40px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #F82249;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.card {
+    /* box-shadow: 0 0 10px 0; */
+    background: inherit;
+    border-radius: 15px;
+    border: 2px solid rgb(195, 195, 195);
+
+
+}
+
+.extra-info {
+    display: none;
+    color: black;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 350px;
+    padding: 2px;
+    border: 3px solid #F82249;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.form-select {
+    font-size: 16px;
+}
+
+.info:hover .extra-info {
+    display: block;
+}
+
+.info {
+    position: relative;
+    font-size: 14px;
+    padding-left: 5px;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+.info:hover {
+    word-wrap: break-word;
+    padding: 0 0 0 5px;
+    text-align: left !important;
+
+}
+
+p {
+    margin-bottom: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .extra-info {
+        left: auto;
+        width: 200px;
+    }
+
+    .input_element {
+        margin-top: 5px;
+        /* border: 1px solid blue; */
+        width: 95%;
+        height: 50px;
+        font-size: 12px;
+
+    }
+
+    .input_element input,
+    .input_element select {
+        height: 30px;
+        border-radius: 9px;
+        /* border:1px solid black; */
+        font-size: 12px;
+    }
+
+
+    p {
+        margin-bottom: 1px;
+    }
+
+    .input_element p {
+        font-weight: 300;
+    }
+
+}

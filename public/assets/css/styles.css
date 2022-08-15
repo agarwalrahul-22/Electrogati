@@ -1,0 +1,584 @@
+body {
+    background: #fff;
+    color: #2f3138;
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+a {
+  color: #f82249;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #0e1b4d;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #f82249;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #f94a6a;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.section-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #f82249;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+#header.header-scrolled, #header.header-inner {
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+}
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+@media (max-width: 992px) {
+  #header #logo img {
+    max-height: 30px;
+  }
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 12px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(202, 206, 221, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  padding: 6px 4px;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #f82249;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #fff;
+}
+/**
+* Mobile Navigation
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+  visibility: hidden;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #060c22;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #f82249;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #f82249;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url('../img/bgweb-01.png') top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+@media (max-width: 991px) {
+  #hero .hero-container {
+    top: 70px;
+  }
+}
+#hero h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#hero h1 span {
+  color: #f82249;
+}
+@media (max-width: 991px) {
+  #hero h1 {
+    font-size: 34px;
+  }
+}
+#hero p {
+  color: #ebebeb;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  #hero p {
+    font-size: 16px;
+  }
+}
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  background: url("../img/bgweb-01.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+#speakers {
+  padding: 60px 0 30px 0;
+}
+#speakers .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#speakers .speaker .details {
+  background: rgba(6, 12, 34, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#speakers .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#speakers .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+#speakers .speaker .details .social {
+  height: 40px;
+}
+#speakers .speaker .details .social i {
+  line-height: 0;
+  margin: 0 2px;
+}
+#speakers .speaker .details a {
+  color: #fff;
+}
+#speakers .speaker .details a:hover {
+  color: #f82249;
+}
+#speakers .speaker:hover .details {
+  bottom: 0;
+}
+
+#speakers-details {
+  padding: 60px 0;
+}
+#speakers-details .details h2 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#speakers-details .details .social {
+  margin-bottom: 15px;
+}
+#speakers-details .details .social a {
+  background: #e9edfb;
+  color: #112363;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#speakers-details .details .social a:hover {
+  background: #f82249;
+  color: #fff;
+}
+#speakers-details .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+#speakers-details .details p {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #101522;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+#footer .footer-top {
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-info h2 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #f82249;
+}
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+#footer .footer-top .footer-info p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+#footer .footer-top .social-links a {
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-top .social-links a i {
+  line-height: 0;
+  font-size: 16px;
+}
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #f82249;
+  font-size: 18px;
+}
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+#footer .footer-top .footer-links ul a:hover {
+  color: #f82249;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
