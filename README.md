@@ -20,6 +20,8 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - Download & Install [Xammp Control Panel](https://downloadsapachefriends.global.ssl.fastly.net/8.0.19/xampp-windows-x64-8.0.19-0-VS16-installer.exe?from_af=true)
 - Download & Install [Composer Package Manager](https://getcomposer.org/Composer-Setup.exe)
 - Download [Codeigniter zip file](https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/v4.2.4)
+- Click on admin option in mysql in Xammp control panel
+- Then make a new database named mobility and then import **mobility.sql** from the cloned repo
 - Open the code in VS-code or any other code editor
 - Open terminal and go to the cloned folder and write "Composer Update"
 - Open the web browser and write "localhost/Electrogati" to view the project
